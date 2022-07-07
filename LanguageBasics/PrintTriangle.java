@@ -11,6 +11,8 @@
      *****************
     *******************
 */
+
+//Zmena 2
 public class PrintTriangle {
     public static void main(String[] args) {
         int size = 10;
