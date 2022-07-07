@@ -8,6 +8,8 @@ public class NumberToText {
 //        number %= 100;
 //    }
 
+    //Zmena test
+
     public static void  main(String[] args){
         int number = 698626532;
 
