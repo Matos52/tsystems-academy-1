@@ -1,3 +1,5 @@
+package Arrays;
+
 public class ArrayOfArrays {
     public static void main(String[] args) {
         //int[][] aMatrix = new int[4][];
