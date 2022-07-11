@@ -6,21 +6,21 @@ import cars.Truck;
 
 public class PersonMain {
     public static void main(String[] args) {
-        Person[] persons = {
-                new Person("Janko"),
-                new Person("Peter", 20),
-                new Person("Michaela", 250),
-                new Student("Marian", "12345"),
-                new Student("Marina", 99, "65532"),
-                new Employee("Robert", 35, "master mega chief")
-        };
-
-        for (Person person : persons) {
-            person.setAge(300); //NIE
-            System.out.println(person.toString()); //person.toString()
-        }
-
-        System.out.println(Person.JAHODA);
+//        Person[] persons = {
+//                new Person("Janko"),
+//                new Person("Peter", 20),
+//                new Person("Michaela", 250),
+//                new Student("Marian", "12345"),
+//                new Student("Marina", 99, "65532"),
+//                new Employee("Robert", 35, "master mega chief")
+//        };
+//
+//        for (Person person : persons) {
+//            person.setAge(300); //NIE
+//            System.out.println(person.toString()); //person.toString()
+//        }
+//
+//        System.out.println(Person.JAHODA);
 
 //        Person p1 = new Person("Jan");
 //        Person p2 = p1;
@@ -28,24 +28,43 @@ public class PersonMain {
 //        System.out.println(p1);
 //        System.out.println(p2);
 
-        Student s1 = new Student("Matej", "384709");
-        System.out.println(s1 instanceof Student);
-        System.out.println(s1 instanceof Person);
-        System.out.println(s1 instanceof Object);
+//        Student s1 = new Student("Matej", "384709");
+//        System.out.println(s1 instanceof Student);
+//        System.out.println(s1 instanceof Person);
+//        System.out.println(s1 instanceof Object);
+//
+//        Car c = new Car("BMW");
+//        System.out.println(s1);
+//        s1.setCar(c);
+//        System.out.println(s1);
+//        s1.getCar().start();
+//        System.out.println(s1);
+//        s1.getCar().stop();
+//        System.out.println(s1);
+//        System.out.println(s1.getClass());
 
-        Car c = new Car("BMW");
-        Car personalCar = new PerconalCar(4);
-        System.out.println(s1);
-        s1.setCar(c);
-        System.out.println(s1);
-        s1.getCar().start();
-        System.out.println(s1);
-        s1.getCar().stop();
-        System.out.println(s1);
-        System.out.println(s1.getClass());
-        PerconalCar pc1 = new PerconalCar();
-        System.out.println(pc1.getNumberOfSeats());
-        Truck t1 = new Truck();
-        System.out.println(t1.getLoad());
+
+
+
+
+        Person p1 = new Person("David");
+        Person p2 = new Person("Tomas");
+
+        PerconalCar personalCar = new PerconalCar("BMW", 4);
+        p1.setCar(personalCar);
+        System.out.println(p1);
+
+        Truck truck = new Truck("Ford", "Wood");
+        p2.setCar(truck);
+        System.out.println(p2);
+
+        Person[] persons = {p1,p2};
+
+        for (Person person : persons) {
+            personalCar.start();
+            truck.start();
+            System.out.println(person.toString()); //person.toString()
+        }
+
     }
 }

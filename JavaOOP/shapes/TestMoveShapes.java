@@ -1,6 +1,6 @@
 package shapes;
 
-//public class TestMoveShapes {
+public class TestMoveShapes {
 //    public static void main(String[] args) {
 //        Shape[] shapes = {
 //            new Point(2, 3),
@@ -24,4 +24,4 @@ package shapes;
 //            System.out.println(shape);
 //        }
 //    }
-//}
+}

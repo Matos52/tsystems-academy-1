@@ -1,14 +1,12 @@
 package cars;
 
-public class Truck {
+public class Truck extends Car {
 
     private String load = "Drevo";
 
-    public Truck() {
-        this("Nic");
-    }
 
-    public Truck(String load) {
+    public Truck(String brand, String load) {
+        super(brand);
         this.load = load;
     }
 

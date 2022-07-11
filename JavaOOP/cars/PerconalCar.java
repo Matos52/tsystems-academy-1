@@ -4,11 +4,8 @@ public class PerconalCar extends Car {
 
     private final int numberOfSeats;
 
-    public PerconalCar() {
-        this(4);
-    }
-
-    public PerconalCar(int numberOfSeats) {
+    public PerconalCar(String brand, int numberOfSeats) {
+        super(brand);
         this.numberOfSeats = numberOfSeats;
     }
 

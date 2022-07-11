@@ -1,15 +1,15 @@
 package shapes;
 
-public class Line extends Shape {
-    int size;
+public class Square extends Shape {
 
-    public Line(int size) {
-        //super(); //toto sa vola, pokial nadtrieda ma taky konstruktor
+    private int size;
+
+    public Square(int size, char color) {
+        super(color);
         this.size = size;
     }
 
-    public Line(int size, char color) {
-        super(color);
+    public Square(int size) {
         this.size = size;
     }
 
@@ -21,6 +21,7 @@ public class Line extends Shape {
         this.size = size;
     }
 
+    @Override
     public String toString() {
         String s = "";
         for (int i = 0; i < size; i++) {
@@ -31,6 +32,8 @@ public class Line extends Shape {
 
     @Override
     public void print() {
-        System.out.println(this.toString());
+        for (int i = 0; i < this.size; i++) {
+            System.out.println(this.toString());
+        }
     }
 }
