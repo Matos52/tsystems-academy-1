@@ -2,6 +2,8 @@ package MyPersons;
 
 
 import cars.Car;
+import cars.PerconalCar;
+import cars.Truck;
 
 public class Person {
     public static final String JAHODA = "Jahoda";
@@ -44,6 +46,22 @@ public class Person {
 
     public void setCar(Car car) {
         this.car = car;
+    }
+
+    public PerconalCar getPc1() {
+        return pc1;
+    }
+
+    public void setPc1(PerconalCar pc1) {
+        this.pc1 = pc1;
+    }
+
+    public Truck getT1() {
+        return t1;
+    }
+
+    public void setT1(Truck t1) {
+        this.t1 = t1;
     }
 
     private boolean isValidAge(int ageNew) {

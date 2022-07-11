@@ -2,6 +2,7 @@ package MyPersons;
 
 import cars.Car;
 import cars.PerconalCar;
+import cars.Truck;
 
 public class PersonMain {
     public static void main(String[] args) {
@@ -44,5 +45,7 @@ public class PersonMain {
         System.out.println(s1.getClass());
         PerconalCar pc1 = new PerconalCar();
         System.out.println(pc1.getNumberOfSeats());
+        Truck t1 = new Truck();
+        System.out.println(t1.getLoad());
     }
 }
