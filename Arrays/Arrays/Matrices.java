@@ -15,16 +15,21 @@ public class Matrices {
         int[][] transpose = transposeMatrices(aMatrix);
     }
 
-    private static void printMatrix(int[][] matrix) {
-        for (int r = 0; r < matrix.length; r++) {
-            for (int c = 0; c < matrix[r].length; c++) {
-                System.out.print(matrix[r][c] + " ");
-            }
-            System.out.println();
-        }
-    }
+//    private static void printMatrix(int[][] matrix) {
+//        for (int r = 0; r < matrix.length; r++) {
+//            for (int c = 0; c < matrix[r].length; c++) {
+//                System.out.print(matrix[r][c] + " ");
+//            }
+//            System.out.println();
+//        }
+//    }
 
     private static int[][] addMatrices(int[][] matrixA, int[][] matrixB) {
+        if(matrixA == null || matrixB == null) {
+            System.out.println("Jedna z matic je null.");
+            return null;
+        }
+
         if(matrixA.length != matrixB.length || matrixA[0].length != matrixB[0].length) {
             System.out.println("Nieje mozne vykonat operaciu. Matice musia mat rovnaky pocet stlpcov a riadkov.");
             return null;
@@ -41,6 +46,7 @@ public class Matrices {
             }
             return matrixC;
         }
+
     }
 
     private static int[][] multiplyMatrices(int[][] matrixA, int[][] matrixB) {
