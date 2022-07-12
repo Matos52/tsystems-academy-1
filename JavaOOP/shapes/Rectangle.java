@@ -34,16 +34,17 @@ public class Rectangle extends Shape {
 
     public String toString() {
         String s = "";
-        for (int i = 0; i < width; i++) {
-            s += super.color;
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                s += super.color;
+            }
+            s += "\n";
         }
         return s;
     }
 
     @Override
     public void print() {
-        for (int i = 0; i < this.height; i++) {
-            System.out.println(this.toString());
-        }
+        System.out.println(this.toString());
     }
 }

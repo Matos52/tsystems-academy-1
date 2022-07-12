@@ -3,7 +3,7 @@ package MyPersons;
 
 import cars.Car;
 
-public class Person {
+public class Person implements Comparable<Person> {
     public static final String JAHODA = "Jahoda";
     private String name; // = null;
     private int age; // = 0;
@@ -57,5 +57,14 @@ public class Person {
                 ", age=" + age +
                 (car != null ? ", car=" + car : "") +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        if (this.name.compareTo(o.name)==0) {
+            return this.age - o.age;
+        }
+        return this.name.compareTo(o.name);
+        //return 0;
     }
 }

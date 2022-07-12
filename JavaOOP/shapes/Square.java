@@ -25,15 +25,16 @@ public class Square extends Shape {
     public String toString() {
         String s = "";
         for (int i = 0; i < size; i++) {
-            s += super.color;
+            for (int j = 0; j < size; j++) {
+                s += super.color;
+            }
+            s += "\n";
         }
         return s;
     }
 
     @Override
     public void print() {
-        for (int i = 0; i < this.size; i++) {
-            System.out.println(this.toString());
-        }
+        System.out.println(this.toString());
     }
 }

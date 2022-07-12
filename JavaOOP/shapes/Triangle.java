@@ -24,18 +24,22 @@ public class Triangle extends Shape {
     @Override
     public String toString() {
         String s = "";
-        for (int i = 0; i < height; i++) {
-            s += super.color;
+
+        int k = 1;
+        while (k<10) {
+            for (int i = 0; i < height ; i++) {
+                for (int j = 0; j < k; j++) {
+                    s += super.color;
+                }
+                s += "\n";
+            }
+            return s;
         }
-        return s;
+        return null;
     }
 
     @Override
     public void print() {
-        String s = "";
-        for (int i = 0; i < height; i++) {
-            s += super.color;
-            System.out.println(s);
-        }
+        System.out.println(this.toString());
     }
 }

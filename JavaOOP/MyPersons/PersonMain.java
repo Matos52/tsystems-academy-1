@@ -4,6 +4,8 @@ import cars.Car;
 import cars.PerconalCar;
 import cars.Truck;
 
+import java.util.Arrays;
+
 public class PersonMain {
     public static void main(String[] args) {
 //        Person[] persons = {
@@ -47,23 +49,49 @@ public class PersonMain {
 
 
 
-        Person p1 = new Person("David");
-        Person p2 = new Person("Tomas");
+//        Person p1 = new Person("David");
+//        Person p2 = new Person("Tomas");
+//
+//        PerconalCar personalCar = new PerconalCar("BMW", 4);
+//        p1.setCar(personalCar);
+//        System.out.println(p1);
+//
+//        Truck truck = new Truck("Ford", "Wood");
+//        p2.setCar(truck);
+//        System.out.println(p2);
+//
+//        Person[] persons = {p1,p2};
+//
+//        for (Person person : persons) {
+//            if(person.getCar() != null) {
+//                person.getCar().start();
+//            }
+//            System.out.println(person.toString()); //person.toString()
+//        }
 
-        PerconalCar personalCar = new PerconalCar("BMW", 4);
-        p1.setCar(personalCar);
-        System.out.println(p1);
+        Person[] persons = {
+                new Person("Janko" , 35),
+                new Person("Peter", 20),
+                new Person("Michaela", 75),
+                new Person("Michaela", 5),
+                new Person("Michaela", 28),
+                new Person("Michaela", 99)
+        };
 
-        Truck truck = new Truck("Ford", "Wood");
-        p2.setCar(truck);
-        System.out.println(p2);
+        Person p1 = persons[0];
+        Person p2 = persons[0];
+        Person p3 = persons[0];
+        Person p4 = persons[0];
+        Person p5 = persons[0];
+        Person p6 = persons[0];
 
-        Person[] persons = {p1,p2};
 
-        for (Person person : persons) {
-            personalCar.start();
-            truck.start();
-            System.out.println(person.toString()); //person.toString()
+
+
+        Arrays.sort(persons);
+
+        for (Person person: persons) {
+            System.out.println(person);
         }
 
     }
