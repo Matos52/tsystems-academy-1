@@ -25,15 +25,18 @@ public class Triangle extends Shape {
     public String toString() {
         String s = "";
 
+        StringBuilder sb = new StringBuilder();
+
+
         int k = 1;
         while (k<10) {
             for (int i = 0; i < height ; i++) {
                 for (int j = 0; j < k; j++) {
-                    s += super.color;
+                    sb.append(this.color).append(" ");
                 }
-                s += "\n";
+                sb.append("\n");
             }
-            return s;
+            return sb.toString();
         }
         return null;
     }
