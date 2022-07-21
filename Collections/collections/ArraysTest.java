@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArraysTest {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("Jozo");
         list.add("Fero");
         list.add("Jano");
